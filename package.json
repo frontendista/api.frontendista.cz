@@ -5,7 +5,8 @@
   "main": "build/index.js",
   "scripts": {
     "dev": "wrangler dev",
-    "build": "esbuild index.js --bundle --minify --outfile=build/index.js",
+    "build": "esbuild app/index.ts --bundle --minify --outfile=build/index.js",
+    "check:tsc": "tsc -noEmit",
     "format": "prettier --write '**/*.{js,css,json,md}'"
   },
   "author": "Pavel Sušický <susicky.pavel@outlook.cz>",
@@ -14,7 +15,9 @@
     "nope-validator": "^1.0.2"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^3.4.0",
     "esbuild": "^0.14.30",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "typescript": "^4.6.3"
   }
 }

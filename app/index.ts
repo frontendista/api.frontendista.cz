@@ -17,16 +17,10 @@ const schema = Nope.object().shape({
     .required("Message is required"),
 });
 
-/**
- * Respond with hello worker text
- * @param {Request} request
- */
-async function handleRequest(request) {
-  console.log(request.body);
-
+async function handleRequest(request: Request): Promise<Response> {
   return new Response(
     JSON.stringify({
-      hi: "hello worker",
+      data: "Hello, World!",
     }),
     {
       headers: { "content-type": "application/json" },

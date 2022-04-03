@@ -12,6 +12,7 @@ compatibility_date = "2022-04-03"
 
 [build]
 command = "pnpm build"
+watch_dir = "app"
 
 [build.upload]
 format = "service-worker"
