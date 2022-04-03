@@ -1,11 +1,10 @@
 {
   "private": true,
-  "name": "api-frontendista-cz",
-  "version": "1.0.0",
-  "description": "A template for kick starting a Cloudflare Workers project",
+  "name": "api.frontendista.cz",
+  "description": "TODO: Change (A template for kick starting a Cloudflare Workers project)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "wrangler dev",
     "format": "prettier --write '**/*.{js,css,json,md}'"
   },
   "author": "Pavel Sušický <susicky.pavel@outlook.cz>",
