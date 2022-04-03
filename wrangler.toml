@@ -1,8 +1,17 @@
 name = "api-frontendista-cz"
 type = "javascript"
 
-account_id = ""
+account_id = "556f46decf146c2cfd5cc44150fb2557"
+
+# deployment to *.workers.dev
 workers_dev = true
+
 route = ""
 zone_id = ""
 compatibility_date = "2022-04-03"
+
+[build]
+command = "pnpm build"
+
+[build.upload]
+format = "service-worker"
