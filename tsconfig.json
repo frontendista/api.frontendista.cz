@@ -4,6 +4,8 @@
     "module": "CommonJS",
     "lib": ["ES2020"],
     "types": ["@cloudflare/workers-types"],
-    "strict": true
-  }
+    "strict": true,
+    "baseUrl": "."
+  },
+  "include": ["bindings.d.ts", "app/*.ts"]
 }
