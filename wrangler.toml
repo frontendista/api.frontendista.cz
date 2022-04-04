@@ -4,10 +4,10 @@ type = "javascript"
 account_id = "556f46decf146c2cfd5cc44150fb2557"
 
 # deployment to *.workers.dev
-workers_dev = true
+workers_dev = false
 
-route = ""
-zone_id = ""
+route = "https://api.frontendista.cz/v1/*"
+zone_id = "61b1f8d022953a18f9f9f82a155d1403"
 compatibility_date = "2022-04-03"
 
 [build]
