@@ -18,12 +18,18 @@ const schema = Nope.object().shape({
 });
 
 async function handleRequest(request: Request): Promise<Response> {
+  const headers = new Headers();
+
+  headers.set("Content-Type", "application/json;charset=UTF-8");
+  // NOTE: Staging isn't gonna work with this.
+  headers.set("Access-Control-Allow-Origin", "https://frontendista.cz");
+
   return new Response(
     JSON.stringify({
       data: "Hello, World!",
     }),
     {
-      headers: { "content-type": "application/json" },
+      headers,
     },
   );
 }
