@@ -1,5 +1,6 @@
 <p align="center">
     <h1 align="center">api.frontendista.cz</h1>
+    <strong align="center">Project Vi</strong>
 </p>
 
 <!-- <p align="center">
