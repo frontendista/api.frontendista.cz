@@ -4,8 +4,9 @@
   "description": "Cloudflare Workers used by frontendista.cz",
   "main": "build/index.js",
   "scripts": {
-    "dev": "miniflare --debug --watch",
+    "dev": "miniflare -B \"pnpm build\"",
     "build": "esbuild app/index.ts --sourcemap --bundle --minify --outfile=build/index.js",
+    "build:prod": "esbuild app/index.ts --bundle --minify --outfile=build/index.js",
     "check:tsc": "tsc -noEmit",
     "format": "prettier --write '**/*.{js,css,json,md}'"
   },
