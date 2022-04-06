@@ -4,8 +4,8 @@
   "description": "Cloudflare Workers used by frontendista.cz",
   "main": "build/index.js",
   "scripts": {
-    "dev": "cross-env RUST_BACKTRACE=1 wrangler dev -e dev",
-    "build": "esbuild app/index.ts --bundle --minify --outfile=build/index.js",
+    "dev": "miniflare --debug --watch",
+    "build": "esbuild app/index.ts --sourcemap --bundle --minify --outfile=build/index.js",
     "check:tsc": "tsc -noEmit",
     "format": "prettier --write '**/*.{js,css,json,md}'"
   },
@@ -19,6 +19,7 @@
     "@cloudflare/workers-types": "^3.4.0",
     "cross-env": "^7.0.3",
     "esbuild": "^0.14.30",
+    "miniflare": "^2.4.0",
     "prettier": "^1.18.2",
     "typescript": "^4.6.3"
   }

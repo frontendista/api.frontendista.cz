@@ -5,6 +5,7 @@ account_id = "556f46decf146c2cfd5cc44150fb2557"
 zone_id = "61b1f8d022953a18f9f9f82a155d1403"
 compatibility_date = "2022-04-03"
 
+workers_dev = true
 
 [build]
 command = "pnpm build"
@@ -12,10 +13,6 @@ watch_dir = "app"
 
 [build.upload]
 format = "service-worker"
-
-[env.dev]
-workers_dev = true
-vars = { ENVIRONMENT = "dev", BASE_PATH = "" }
 
 [env.staging]
 route = "api.frontendista.cz/staging/*"
