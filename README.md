@@ -3,19 +3,13 @@
     <strong>Project Vi</strong>
 </div>
 
-<!-- <p align="center">
-  <a aria-label="Vercel logo" href="https://vercel.com">
-    <img src="https://img.shields.io/badge/MADE%20BY%20Vercel-000000.svg?style=for-the-badge&logo=Vercel&labelColor=000">
+<br />
+
+<p align="center">
+  <a href="https://github.com/Thesoreon/api.frontendista.cz/actions/workflows/staging.yml">
+    <img src="https://github.com/Thesoreon/api.frontendista.cz/actions/workflows/staging.yml/badge.svg" />
   </a>
 </p>
-<p align="center">
-  <a href="https://github.com/Thesoreon/frontendista.cz/actions/workflows/build_lint_test_staging.yml">
-    <img src="https://github.com/thesoreon/frontendista.cz/actions/workflows/build_lint_test_staging.yml/badge.svg" />
-  </a>
-  <a href="https://github.com/Thesoreon/frontendista.cz/actions/workflows/build_lint_test_production.yml">
-    <img src="https://github.com/Thesoreon/frontendista.cz/actions/workflows/build_lint_test_production.yml/badge.svg" />
-  </a>
-</p> -->
 
 ## 1. Installation
 
