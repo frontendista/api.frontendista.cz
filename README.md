@@ -1,7 +1,7 @@
-<p align="center">
-    <h1 align="center">api.frontendista.cz</h1>
-    <strong align="center">Project Vi</strong>
-</p>
+<div align="center">
+    <h1>api.frontendista.cz</h1>
+    <strong>Project Vi</strong>
+</div>
 
 <!-- <p align="center">
   <a aria-label="Vercel logo" href="https://vercel.com">
