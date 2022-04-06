@@ -4,7 +4,7 @@
   "description": "TODO: Change (A template for kick starting a Cloudflare Workers project)",
   "main": "build/index.js",
   "scripts": {
-    "dev": "wrangler dev",
+    "dev": "cross-env RUST_BACKTRACE=1 wrangler dev -e dev",
     "build": "esbuild app/index.ts --bundle --minify --outfile=build/index.js",
     "check:tsc": "tsc -noEmit",
     "format": "prettier --write '**/*.{js,css,json,md}'"
@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^3.4.0",
+    "cross-env": "^7.0.3",
     "esbuild": "^0.14.30",
     "prettier": "^1.18.2",
     "typescript": "^4.6.3"
