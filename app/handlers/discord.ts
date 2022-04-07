@@ -1,4 +1,4 @@
-import { discordWebhookScheme } from "./utils/validation-schemes";
+import { discordWebhookScheme } from "../utils/validation-schemes";
 
 interface IData {
   name?: string;

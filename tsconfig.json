@@ -7,5 +7,5 @@
     "strict": true,
     "baseUrl": "."
   },
-  "include": ["bindings.d.ts", "app/*.ts"]
+  "include": ["bindings.d.ts", "app/**/*.ts"]
 }

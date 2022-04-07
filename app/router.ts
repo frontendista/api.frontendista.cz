@@ -1,7 +1,7 @@
 import { Router } from "itty-router";
 
-import { handleDiscord } from "./discord";
-import { handleOptions } from "./options";
+import { handleDiscord } from "./handlers/discord";
+import { handleOptions } from "./handlers/options";
 
 import type { IHTTPMethods } from "itty-router"
 
