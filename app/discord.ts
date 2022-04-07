@@ -9,6 +9,10 @@ interface IData {
 export async function handleDiscord(req: Request) {
   const body = await req.json<IData>();
 
+  const headers = new Headers();
+  headers.append("Content-Type", "text/plain");
+  headers.append("Access-Control-Allow-Origin", "*");
+
   const validationResult = discordWebhookScheme.validate(body);
 
   if (validationResult) {
@@ -25,14 +29,23 @@ export async function handleDiscord(req: Request) {
     });
 
     if (webhookResult.ok) {
-      return new Response("OK");
+      return new Response("Created", {
+        status: 201,
+        headers,
+      });
     } else {
       console.error(webhookResult);
-      return new Response("Discord webhook has failed.", { status: 500 });
+      return new Response("Discord webhook has failed.", {
+        status: 500,
+        headers,
+      });
     }
   } catch (error) {
     console.error(error);
-    return new Response("Discord communication has failed.", { status: 500 });
+    return new Response("Discord communication has failed.", {
+      status: 500,
+      headers,
+    });
   }
 }
 
