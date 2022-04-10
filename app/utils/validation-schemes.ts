@@ -9,6 +9,6 @@ export const discordWebhookScheme = Nope.object().shape({
     .email("Invalid email"),
   message: Nope.string()
     .min(1, "Message is too short")
-    .max(999, "Message is too long")
+    .max(1000, "Message is too long")
     .required("Message is required"),
 });
