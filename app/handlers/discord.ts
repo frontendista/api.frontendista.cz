@@ -16,7 +16,10 @@ export async function handleDiscord(req: Request) {
   const validationResult = discordWebhookScheme.validate(body);
 
   if (validationResult) {
-    return new Response(JSON.stringify(validationResult), { status: 400 });
+    return new Response(JSON.stringify(validationResult), {
+      status: 400,
+      headers,
+    });
   }
 
   try {
